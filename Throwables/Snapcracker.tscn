@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://rhsb45tvf33n"]
+
+[ext_resource type="Script" path="res://Throwables/Snapcracker.gd" id="1_18ogv"]
+[ext_resource type="Texture2D" uid="uid://bkmmokulh248r" path="res://Throwables/Snapcracker Sprite.png" id="2_0yghq"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_edt4o"]
+radius = 2.23607
+
+[node name="Snapcracker" type="RigidBody2D"]
+script = ExtResource("1_18ogv")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_0yghq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_edt4o")

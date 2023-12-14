@@ -1,0 +1,55 @@
+[gd_scene load_steps=7 format=3 uid="uid://bgt726kxbljju"]
+
+[ext_resource type="Script" path="res://BG.gd" id="1_rjg67"]
+[ext_resource type="Texture2D" uid="uid://cwju6glodgbsl" path="res://Made By Me/Parallax5.png" id="2_1olh4"]
+[ext_resource type="Texture2D" uid="uid://c0cwfv4ktoj5j" path="res://Made By Me/Parallax4.png" id="3_ovbh4"]
+[ext_resource type="Texture2D" uid="uid://cwm24ccsvw8ll" path="res://Made By Me/Parallax3.png" id="4_4cl86"]
+[ext_resource type="Texture2D" uid="uid://cgljstvtvf85b" path="res://Made By Me/Parallax2.png" id="5_m2q77"]
+[ext_resource type="Texture2D" uid="uid://bvhyuc1nk1lb1" path="res://Made By Me/Parallax1.png" id="6_1fxrd"]
+
+[node name="BG" type="ParallaxBackground"]
+script = ExtResource("1_rjg67")
+
+[node name="Far Back" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2(320, 0)
+
+[node name="Parallax5" type="Sprite2D" parent="Far Back"]
+position = Vector2(160, 90.0001)
+scale = Vector2(0.166667, 0.166667)
+texture = ExtResource("2_1olh4")
+
+[node name="4th" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.25, 1)
+motion_mirroring = Vector2(320, 0)
+
+[node name="Parallax4" type="Sprite2D" parent="4th"]
+position = Vector2(160, 90.0001)
+scale = Vector2(0.166667, 0.166667)
+texture = ExtResource("3_ovbh4")
+
+[node name="3rd" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.2, 1)
+motion_mirroring = Vector2(320, 0)
+
+[node name="Parallax3" type="Sprite2D" parent="3rd"]
+position = Vector2(160, 90.0001)
+scale = Vector2(0.166667, 0.166667)
+texture = ExtResource("4_4cl86")
+
+[node name="2nd" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.15, 1)
+motion_mirroring = Vector2(320, 0)
+
+[node name="Parallax2" type="Sprite2D" parent="2nd"]
+position = Vector2(160, 90.0001)
+scale = Vector2(0.166667, 0.166667)
+texture = ExtResource("5_m2q77")
+
+[node name="Front" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.1, 1)
+motion_mirroring = Vector2(320, 0)
+
+[node name="Parallax1" type="Sprite2D" parent="Front"]
+position = Vector2(160, 90.0001)
+scale = Vector2(0.166667, 0.166667)
+texture = ExtResource("6_1fxrd")

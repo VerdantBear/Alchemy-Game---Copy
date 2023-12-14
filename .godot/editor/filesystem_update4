@@ -1,0 +1,5 @@
+res://main.tscn
+res://Other/Player/player.gd
+res://world.tscn
+res://Other/Player/player.tscn
+res://Throwables/Snapcracker.tscn
